@@ -1,6 +1,6 @@
 # UBER Pickups 
 
-**<font size = 6>Visit the app at https://share.streamlit.io/nicolas-hegerle/p05_uber_pickups/main</font>**
+**<font size = 4>Visit the app at https://share.streamlit.io/nicolas-hegerle/p05_uber_pickups/main</font>**
 
 ## Company's Description 📇
 
@@ -34,32 +34,17 @@ To start off, Uber wants to try this feature in New York city. Therefore you wil
 
 **You only need to focus on New York City for this project**
 
-## Helpers 🦮
+## Results and available files
 
-To help you achieve this project, here are a few tips that should help you: 
+### <ins>Notebooks</ins>
+* ```P05_Uber_PickUps.ipynb``` contains EDA as well as clustering with K-Means clustering and DBSCAN
+* DBSCAN clustering allows insightfull clustering of Uber PickUps in NYC by showing hot-spots of pickups per hour and day
 
-### Clustering is your friend 
+### <ins>Python script</ins>
+* ```graph_func.py``` a script to plot satter mapboxes to display cluster on maps
+    * ```map_clusters``` generates an interactive scatter mapbox with dropdown menus allowing to plot results of multiple clustering and switch between each clustering results
+    * ```subplot_cluster``` generates a subplot where the results of each clustering are displayed on individual subplots. Results of such plotting are available in ```cluster_maps```.
 
-Clustering technics are a perfect fit for the job. Think about it, all the pickup locations can be gathered into different clusters. You can then use **cluster coordinates to pin hot zones** 😉
-    
-
-### Create maps with `plotly` 
-
-Check out <a href="https://plotly.com/" target="_blank">Plotly</a> documentation, you can create maps and populate them easily. Obviously, there are other libraries but this one should do the job pretty well. 
-
-
-### Start small grow big 
-
-Eventhough Uber wants to have hot-zones per hour and per day of week, you should first **start small**. Pick one day at a given hour and **then start to generalize** your approach. 
-
-## Deliverable 📬
-
-To complete this project, your team should: 
-
-* Have a map with hot-zones using any python library (`plotly` or anything else). 
-* You should **at least** describe hot-zones per day of week. 
-* Compare results with **at least** two unsupervised algorithms like KMeans and DBScan. 
-
-Your maps should look something like this: 
-
-<img src="https://full-stack-assets.s3.eu-west-3.amazonaws.com/images/Clusters_uber_pickups.png" alt="Uber Cluster Map" />
+### <ins>streamlit_app.py</ins>
+* script to build a webapp to visualize Uber PickUp clustering.  
+Visit the app: https://share.streamlit.io/nicolas-hegerle/p05_uber_pickups/main 
